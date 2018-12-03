@@ -17,7 +17,7 @@ class CT extends Controller
                         json(["name" => "John",
                               "age" => 35]);
     }
-    //Страница, доступная по логину и выводящая $id из URL на страницу
+    //Страница, доступная по логину и выводящая URL на страницу
     function logonly(Request $request) {
             //Если посетитель не гость, отправляем его не священную страницу
             $url=$request->path();
